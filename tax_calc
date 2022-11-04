@@ -1,0 +1,19 @@
+
+slab={200000:0,500000:0.05,1000000:0.20,1100000:0.30}
+def taxcalculator(income):
+    for i,j in slab.items():
+       if income <= i:
+          tax=0
+          print("No Tax")
+          break
+       if income==i:
+          tax=income*j
+          break
+       if income == i:
+           tax = income*j+25000
+           break
+       if income ==i:
+           tax=income*j+125000
+           break
+       
+print(taxcalculator(200000))
